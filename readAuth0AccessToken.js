@@ -1,6 +1,7 @@
 var express = require('express');
 var jwt = require('jsonwebtoken');
 var appServer = express();
+var port = process.env.PORT || 8080;
 
 appServer.get('/', function(serverRequest, serverResponse) {    
     
