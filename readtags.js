@@ -1,5 +1,5 @@
 
-var express = require('express');
+/*var express = require('express');
 var Clarifai = require('clarifai');
 var appServer = express();
 var port = process.env.PORT || 8080;
@@ -28,6 +28,6 @@ appServer.get('/getTags', function(serverRequest, serverResponse) {
     );
 });
 
-/*appServer.listen(port, function() {
+appServer.listen(port, function() {
     console.log('Sever is listening');
 });*/
