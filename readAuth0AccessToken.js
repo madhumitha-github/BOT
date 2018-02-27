@@ -21,6 +21,7 @@ appServer.get('/getAccessToken', function(serverRequest, serverResponse) {
 
 	var token;
 		
+	
 	var options = { method: 'POST',
 	  url: 'https://madhu-auth.auth0.com/oauth/token',
 	  // url: 'https://madhu-auth.auth0.com/authorize',
