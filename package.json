@@ -2,7 +2,7 @@
   "name": "irecognize",
   "main": "readtags.js",
   "scripts": {
-    "start": "node readtags.js"
+    "start": "node readAuth0AccessToken.js"
   },
   "dependencies": {
     "clarifai": "1.2.0",
