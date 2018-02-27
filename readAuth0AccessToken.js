@@ -11,8 +11,7 @@ appServer.get('/', function(serverRequest, serverResponse) {
 		if(error) {
 			return serverResponse.send('Access Token not authorized');
 		} else {
-		    	return serverResponse.send(decodedPayload);
-			// callback(null, {"userId": decodedPayload.user_id, "userName": decodedPayload.name});
+		    	return serverResponse.send(decodedPayload);			
 		}
 	});
 });
