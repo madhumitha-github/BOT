@@ -29,8 +29,7 @@ appServer.get('/getAccessToken', function(serverRequest, serverResponse) {
 	  console.log(body);
 	});
 	
-	return serverResponse.send(token);
-	
+	return serverResponse.send(token);	
 });
 	      
 appServer.listen(port, function() {
