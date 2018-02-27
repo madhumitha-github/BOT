@@ -1,4 +1,4 @@
-/*var jwt = require('jsonwebtoken');
+var jwt = require('jsonwebtoken');
 var appServer = express();
 
 appServer.get('/readAuth0Token', function(serverRequest, serverResponse) {    
@@ -13,4 +13,4 @@ appServer.get('/readAuth0Token', function(serverRequest, serverResponse) {
 			// callback(null, {"userId": decodedPayload.user_id, "userName": decodedPayload.name});
 		}
 	});
-};*/
+};
