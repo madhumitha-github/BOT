@@ -1,6 +1,6 @@
 {
   "name": "irecognize",
-  "main": "readtags.js",
+  "main": "readAuth0AccessToken.js",
   "scripts": {
     "start": "node readAuth0AccessToken.js"
   },
