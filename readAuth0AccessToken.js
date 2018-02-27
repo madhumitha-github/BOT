@@ -24,7 +24,7 @@ appServer.get('/getAccessToken', function(serverRequest, serverResponse) {
 	  headers: { 'content-type': 'application/json' },
 	  body: '{"client_id":"8m2Awas2gWcASKi7s5nU3vO3exUSt3HE","client_secret":"wE3tuyod3g-Sfs78424U3nEPyC4pPofpKUnOhWNjS_gM3kgydSLGf6oQIUN28_My","audience":"https://alexa-bank.api","grant_type":"client_credentials"}' };
 
-	serverRequest(options, function (error, response, body) {
+	serverRequest.post(options, function (error, response, body) {
 	  token = body;
 	  console.log(body);
 	});
