@@ -1,7 +1,7 @@
 var jwt = require('jsonwebtoken');
 var appServer = express();
 
-appServer.get('/', function(serverRequest, serverResponse) {    
+appServer.get('/readAuth0Token', function(serverRequest, serverResponse) {    
     
 	var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21hZGh1LWF1dGguYXV0aDAuY29tLyIsInN1YiI6IjhtMkF3YXMyZ1djQVNLaTdzNW5VM3ZPM2V4VVN0M0hFQGNsaWVudHMiLCJhdWQiOiJodHRwczovL2FsZXhhLWJhbmsuYXBpIiwiaWF0IjoxNTE5NzA5ODQ3LCJleHAiOjE1MTk3OTYyNDcsImF6cCI6IjhtMkF3YXMyZ1djQVNLaTdzNW5VM3ZPM2V4VVN0M0hFIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.iduPOGHeo2DPCtKZaBuNqh94xVudalMOAjPRDkj6LcI';
 
