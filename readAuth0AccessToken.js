@@ -27,6 +27,7 @@ appServer.get('/getAccessToken', function(serverRequest, serverResponse) {
 	appServer.post(options, function (error, response, body) {
 	  token = body;
 	  console.log(body);
+	  return body;
 	});
 	
 	return serverResponse.send(token);	
