@@ -1,3 +1,4 @@
+var express = require('express');
 var jwt = require('jsonwebtoken');
 var appServer = express();
 
