@@ -13,7 +13,7 @@ appServer.get('/', function(serverRequest, serverResponse) {
 			// callback(null, {"userId": decodedPayload.user_id, "userName": decodedPayload.name});
 		}
 	});
-};
+});
 	      
 appServer.listen(port, function() {
     console.log('Sever is listening');
