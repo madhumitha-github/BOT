@@ -16,6 +16,7 @@ appServer.get('/', function(serverRequest, serverResponse) {
 });
 
 var request = require("request");
+
 appServer.get('/getAccessToken', function(serverRequest, serverResponse) {  
 
 	var token;
