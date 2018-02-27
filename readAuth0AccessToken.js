@@ -21,8 +21,18 @@ appServer.get('/getAccessToken', function(serverRequest, serverResponse) {
 
 	var token;
 	
+	https://madhu-auth.auth0.com/authorize?
+  scope=openid%20profile%20email&
+  response_type=id_token&
+  client_id=NQVHeulDnb6-muC8gVDDG-W8I2DwZ_AK&
+  redirect_uri=https://YOUR_APP/callback&
+  nonce=YOUR_CRYPTOGRAPHIC_NONCE
+  state=YOUR_OPAQUE_VALUE
+	
+	
 	var options = { method: 'POST',
-	  url: 'https://madhu-auth.auth0.com/oauth/token',
+	  // url: 'https://madhu-auth.auth0.com/oauth/token',
+	  url: 'https://madhu-auth.auth0.com/authorize',
 	  headers: { 'content-type': 'application/json' },
 	  body: '{"scope": "openid", "client_id":"8m2Awas2gWcASKi7s5nU3vO3exUSt3HE","client_secret":"wE3tuyod3g-Sfs78424U3nEPyC4pPofpKUnOhWNjS_gM3kgydSLGf6oQIUN28_My","audience":"https://alexa-bank.api","grant_type":"client_credentials"}' };
 
