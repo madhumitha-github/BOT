@@ -9,7 +9,7 @@ appServer.get('/', function(serverRequest, serverResponse) {
 
 	jwt.verify(token, '', function(error, decodedPayload) {
 		if(error) {
-			return serverResponse.send('Access Token not authorized');
+			return serverResponse.send(error.errorMessage + 'Access Token not authorized');
 		} else {
 		    	return serverResponse.send(decodePayload);
 			// callback(null, {"userId": decodedPayload.user_id, "userName": decodedPayload.name});
