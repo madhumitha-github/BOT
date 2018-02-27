@@ -28,6 +28,6 @@ appServer.get('/getTags', function(serverRequest, serverResponse) {
     );
 });
 
-appServer.listen(port, function() {
+/*appServer.listen(port, function() {
     console.log('Sever is listening');
-});
+});*/
